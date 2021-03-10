@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Bansal Wires</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" />
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form id="form1" action="" class="contact" onsubmit="insertDataInSheet('form1'); return false;">
+            <h3>form 1</h3>
+            <h5>form 1</h5>
+            <fieldset><label>File upload</label><br /><input type="file" id="f1" placeholder="Choose File">
+                <div class="fileupload"><i class="fas fa-upload"></i>&nbsp;&nbsp;<label for="f1">File Upload</label>
+                </div>
+            </fieldset>
+            <fieldset><label>Date</label><br /><input class="selectTime" id="f2" type="date"></fieldset>
+            <fieldset><label>Time</label><br /><input class="selectTime" type="number" maxlength="2" min="1"
+                    max="12" /><label> : </label><input class="selectTime" type="number" maxlength="2" min="0"
+                    max="59" />&nbsp;<select style="width: fit-content;" class="selectTime" id="f3" name="time">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select></fieldset>
+            </fieldset>
+            <fieldset style="text-align: center;"><button name="submit" type="submit" id="submit_form1"
+                    data-submit="...Sending">Submit</button></fieldset>
+            <p class="copyright">Designed by <a href="form2_form_2.html" target="_blank"
+                    title="Draggital">Draggital</a></p>
+        </form>
+    </div>
+</body>
+<script src="./../scripts/sheetOperations.js"></script>
+
+</html>

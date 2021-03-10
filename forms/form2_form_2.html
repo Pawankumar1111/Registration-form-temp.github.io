@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Bansal Wires</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css"
+        integrity="sha512-3M00D/rn8n+2ZVXBO9Hib0GKNpkm8MSUU/e2VNthDyBYxKWG+BftNYYcuEjXlyrSO637tidzMBXfE7sQm0INUg=="
+        crossorigin="anonymous" />
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form id="form2" action="" class="contact" onsubmit="insertDataInSheet('form2');">
+            <h3>form 2</h3>
+            <h5></h5>
+            <fieldset><label>Name</label><br /><input type="text" id="f1"></fieldset>
+            <fieldset><label>Marks</label><br /><input type="text" id="f2"></fieldset>
+            <fieldset><label>Subject</label><br /><select id="f3"
+                    onchange="populateFields('form2', 'Subject', this.value);">
+                    <option name="Science">Science</option>
+                    <option name="Maths">Maths</option>
+                    <option name="English">English</option>
+                    <option name="Hindi">Hindi</option>
+                    <option name="Social Science">Social Science</option>
+                </select></fieldset>
+            <fieldset><label>Grade</label><br /><input type="checkbox" id="O+" value="O+"
+                    onchange="populateFields('form2', 'Subject', this.value);"><label for="O+">O+</label><br /><input
+                    type="checkbox" id="A+" value="A+" onchange="populateFields('form2', 'Subject', this.value);"><label
+                    for="A+">A+</label><br /><input type="checkbox" id="A-" value="A-"
+                    onchange="populateFields('form2', 'Subject', this.value);"><label for="A-">A-</label><br /><input
+                    type="checkbox" id="B+" value="B+" onchange="populateFields('form2', 'Subject', this.value);"><label
+                    for="B+">B+</label><br /><input type="checkbox" id="B-" value="B-"
+                    onchange="populateFields('form2', 'Subject', this.value);"><label for="B-">B-</label><br /><input
+                    type="checkbox" id="C" value="C" onchange="populateFields('form2', 'Subject', this.value);"><label
+                    for="C">C</label><br /><input type="checkbox" id="F" value="F"
+                    onchange="populateFields('form2', 'Subject', this.value);"><label for="F">F</label><br /></fieldset>
+            <fieldset style="text-align: center;"><button name="submit" type="submit" id="submit_form2"
+                    data-submit="...Sending">Submit</button></fieldset>
+            <p class="copyright">Designed by <a href="form3_Test_11.html" target="_blank"
+                    title="Draggital">Draggital</a></p>
+        </form>
+    </div>
+</body>
+<script src="./../scripts/sheetOperations.js"></script>
+
+</html>
