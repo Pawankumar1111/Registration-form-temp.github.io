@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Bansal Wires</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <form class="contact" action="" onsubmit="updateSheet();">
+            <h3>FURNACE IN-PROCESS SPEED CHECKING</h3>
+            <fieldset>
+                <input placeholder="S. No." id="sno" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <select id="mcno" onmousedown="this.value='';" onchange="populateFields(this.value);" required>
+                    <option value="M/C No.">M/C No.</option>
+                    <option value="M11">M11</option>
+                    <option value="M12">M12</option>
+                    <option value="M13">M13</option>
+                    <option value="M14">M14</option>
+                    <option value="M15">M15</option>
+                    <option value="M16">M16</option>
+                    <option value="M17">M17</option>
+                    <option value="M18">M18</option>
+                    <option value="M19">M19</option>
+                    <option value="M20">M20</option>
+                    <option value="M21">M21</option>
+                    <option value="M22">M22</option>
+                    <option value="M23">M23</option>
+                    <option value="M24">M24</option>
+                    <option value="M25">M25</option>
+                    <option value="M26">M26</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Base Size (mm)" id="basesize" type="text" tabindex="2" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Finish Size (mm)" id="finishsize" type="text" tabindex="3" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Grade" id="grade" type="text" tabindex="4" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Condition" id="condition" type="text" tabindex="5" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="HIN" id="hin" type="text" tabindex="6" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Tol. (+)" type="text" id="tolplus" type="text" tabindex="7" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Tol. (-)" id="tolminus" type="text" tabindex="8" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Speed (mps)" id="speed" type="text" tabindex="8" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Surface" id="surface" type="text" tabindex="8" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="OBS SIZE (mm)" id="obssize" type="text" tabindex="9" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Remarks" id="remarks" type="text" tabindex="10" required>
+            </fieldset>
+            <fieldset >
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <p class="copyright">Designed by <a href="forms/form1_form_1.html" target="_blank"
+                    title="Draggital">Draggital</a></p>
+        </form>
+    </div>
+
+    <script src="scripts/clientSide.js"></script>
+</body>
+
+</html>
